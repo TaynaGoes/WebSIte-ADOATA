@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cadastro Doador</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+<!-- CSS navbar-->
+		
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+		<link rel="stylesheet" href="fonts/font/stylesheet.css">
+		<link rel="stylesheet" href="fonts/raleway-css/stylesheet.css">
+		
+	<style>
+		@font-face {
+			font-family: 'ralewaysemibold';
+			src: url('raleway-semibold-webfont.woff2') format('woff2'),
+			url('raleway-semibold-webfont.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		a{
+			font-family: 'ralewaysemibold';
+			font-size: 14px;
+			line-height: 1.7;
+			padding: 0 10px;
+		}
+		
+		body{
+			background-color: #1f1f1f;
+		}
+	</style>
+
+<!-- CSS navbar-->
+</head>
+<body>
+
+	<!--navbar-->
+	<div class="header">
+	<!--botao com funçao de esconder uma div inteira-->
+    <input type="checkbox" id="chk" onclick="toggleEstado('container')"><!--o id da div vai ali onde esta 'container'-->
+	<!---->
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+	  <a href="index.html" class="navbar-brand">Adoata</a>
+	<ul class="menu">
+      <a href="index.html#top-content">HOME</a>
+      <a href="index1.html">SEJA MEMBRO</a>
+	  <a href="login.html">LOGIN</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+	</div>
+	<!--navbar-->
+		
+		<div id="container" class="container-contact100" style="background-image: url('images/bg-003.jpg');">
+	<d class="wrap-contact100">
+			<form class="contact100-form validate-form" action="cadastrodoador.php" method="post">
+				<span class="contact100-form-title">
+					<center> Cadastro Doador </center>
+				</span>
+
+				<div class="grande">
+					<span class="label-input100">Nome Completo</span>
+						<input class="input100" type="text" name="nome" placeholder="Nome Completo">
+				</div> 
+			
+
+				<div class="pequena" data-validate="Name is required">
+					<span class="label-input100">CPF</span>
+						<input class="input100" type="text" name="cpf" id="cpf" placeholder="Cadastro de Pessoa Física">
+				</div>
+
+				<div class="pequena">
+					<span class="label-input100">RG</span>
+						<input class="input100" type="text" name="rg" id="rg"  placeholder="Registro Geral">
+				</div>
+
+				<div class="grande">
+					<span class="label-input100">Telefone</span>
+						<input class="input100" type="text" id="" name="fone" placeholder="Telefone">
+				</div> 
+
+				<div class="grande" data-validate = "Valid email is required: ex@abc.xyz">					
+					<span class="label-input100">Email</span>
+						<input class="input100" type="text" name="email" placeholder="Email">
+				</div>
+
+					<div class="pequena" data-validate="Name is required">
+						<span class="label-input100">Login</span>
+							<input class="input100" type="text" name="login" placeholder="Usuário">
+				</div>
+
+				<div class="pequena">
+					<span class="label-input100">Senha</span>
+						<input class="input100" type="password" name="senha" placeholder="Senha de Acesso">
+				</div>
+
+				<div class="pequena">
+					<span class="label-input100">Estado</span>
+							<select name="estado" class="selectclass">
+                  				<option>Selecione um estado</option>
+                  					<option value="Acre">Acre</option>
+									<option value="Alagoas">Alagoas</option>
+									<option value="Amapá">Amapá</option>
+									<option value="Amazonas">Amazonas</option>
+									<option value="Bahia">Bahia</option>
+									<option value="Ceará">Ceará</option>
+									<option value="Distrito Federal">Distrito Federal</option>
+									<option value="Espírito Santo">Espírito Santo</option>
+									<option value="Goiás">Goiás</option>
+									<option value="Maranhão">Maranhão</option>
+									<option value="Mato Grosso">Mato Grosso</option>
+									<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+									<option value="Minas Gerais">Minas Gerais</option>
+									<option value="Pará">Pará</option>
+									<option value="Paraíba">Paraíba</option>
+									<option value="Paraná">Paraná</option>
+									<option value="Pernambuco">Pernambuco</option>
+									<option value="Piauí">Piauí</option>
+									<option value="Rio de Janeiro">Rio de Janeiro</option>
+									<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+									<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+									<option value="Rondônia">Rondônia</option>
+									<option value="Roraima">Roraima</option>
+									<option value="Santa Catarina">Santa Catarina</option>
+									<option value="São Paulo">São Paulo</option>
+									<option value="Sergipe">Sergipe</option>
+									<option value="Tocantins">Tocantins</option>
+							</select>
+                  				
+                  				
+				</div>
+
+				<div class="pequena">
+					<span class="label-input100">Cidade</span>
+					<input class="input100" type="text" name="cidade" placeholder="Cidade">
+				</div>
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button type="submit" class="contact100-form-btn">
+							Enviar
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+
+  <script>
+      jQuery(function($){
+          
+          $("#data").mask("99/99/9999");
+          $("#cpf").mask("999.999.999-99");
+          $("#rg").mask("99.999.999-9");
+          $("#cep").mask("99999-999");
+     
+      });
+      $(document).ready(function(){
+  
+      var SPMaskBehavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+      },
+      spOptions = {
+        onKeyPress: function(val, e, field, options) {
+        field.mask(SPMaskBehavior.apply({}, arguments), options);
+        }
+      };
+      $("#fone").mask(SPMaskBehavior, spOptions);	
+  
+      })
+  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <script src="library/js/jquery.mask.min.js" type="text/javascript"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+  
+  function toggleEstado(divid) {
+    var div = document.getElementById(divid);
+    var disp = div.style.display;
+    div.style.display = disp == 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
